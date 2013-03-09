@@ -1,3 +1,6 @@
+ rem Touhou 2600
+ rem By Aqua Kitty (AKA Reisen, Udonge)
+ rem Source: sample.bas, which comes with batariBASIC
  set smartbranching on
 10 player1x = 40 : player1y = 40:player0x = 50 : player0y = 50
 20 COLUPF = 90:missile0height=4:missile0y=255
