@@ -1,60 +1,35 @@
  rem Touhou 2600
  rem By Aqua Kitty (AKA Reisen, Udonge)
  rem Source: sample.bas, which comes with batariBASIC
-<<<<<<< HEAD
- set smartbranching on
-10 player1x = 40 : player1y = 40:player0x = 50 : player0y = 50
-15 COLUPF = 90:missile0height=4:missile0y=255
-20 health=
-25 score=10000
-30 COLUP0 = 64
-35 COLUP1 = 14
-40 scorecolor = 10:NUSIZ0=16
- rem Reimu
-45 player0:
-
- %01100110
- %11111111
- %11111111
- %01111110
- %10111101
- %01111110
- %01111110
- %01111110
- %11111111
- %11111111
- %01111110
- %11111111
- %11100111
- %11011011
-=======
  include 6lives.asm
  const lives_compact=1
  const lives_centered=1
  set smartbranching on
  rem I took a crack at a title screen here
  player1:
-  %01100010
-  %10010101
-  %10010101
-  %10010101
+  %01000010
+  %10100101
+  %10100101
+  %10100101
   %00000000
-  %01100010
-  %10010101
-  %10010101
-  %10010101
-  %01100010
+  %01000010
+  %10100101
+  %10100101
+  %10100101
+  %01000010
   %00000000
-  %10010010
-  %10010010
-  %11110010
-  %10010111
+  %01000101
+  %01000101
+  %01000111
+  %11100101
 end
+  drawscreen
  rem Begin loop
 Begin
  COLUP1=64:COLUP0=64
- player1x=32:player1y=32
+ player1x=48:player1y=48
  if joy0fire then goto Init
+ drawscreen
  goto Begin
  rem End of Begin Loop
  rem Start of Init routine
@@ -98,7 +73,6 @@ end
   %11111111
   %11100111
   %11011011
->>>>>>> 8deef3f3745310e5383774a96d952ebf7415dfe9
 end
   rem Ghosty
   player1:
