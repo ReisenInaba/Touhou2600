@@ -3,13 +3,15 @@
  rem Source: sample.bas, which comes with batariBASIC
  set smartbranching on
 10 player1x = 40 : player1y = 40:player0x = 50 : player0y = 50
-20 COLUPF = 90:missile0height=4:missile0y=255
+15 COLUPF = 90:missile0height=4:missile0y=255
+20 health=
 25 score=10000
 30 COLUP0 = 64
 35 COLUP1 = 14
 40 scorecolor = 10:NUSIZ0=16
  rem Reimu
 45 player0:
+
  %01100110
  %11111111
  %11111111
